@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školski IT Klub | Coding Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigacija -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">💻 IT Klub</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Početna</a></li>
+                    <li><a href="#about">O nama</a></li>
+                    <li><a href="#projects">Projekti</a></li>
+                    <li><a href="#contact">Prijava</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Sekcija -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h2>Dobrodošli u Školski IT Klub</h2>
+            <p>Mjesto gdje spajamo kreativnost, kodiranje i moderne tehnologije. Pridruži nam se i kreiraj budućnost!</p>
+            <a href="#contact" class="btn">Prijavi se odmah</a>
+        </div>
+    </section>
+
+    <!-- O nama / Osnivač -->
+    <section id="about" class="container section">
+        <h2>O nama & Osnivač</h2>
+        <p class="section-desc">Školski IT klub je mjesto gdje spajamo kreativnost, kodiranje i moderne tehnologije.</p>
+        <div class="grid">
+            <div class="card" style="grid-column: 1 / -1; max-width: 450px; margin: 0 auto;">
+                <div class="avatar-placeholder">👨‍💻</div>
+                <h3>Aldin Subašić</h3>
+                <p>Glavni web developer, osnivač i administrator stranice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projekti / Galerija -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Naši Projekti</h2>
+            <p class="section-desc">Pogledaj neke od aplikacija i rješenja koje smo razvili.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Raspored Škole Bot</h3>
+                    <p>Telegram i Discord bot koji automatski šalje obavještenja o izmjenama časova.</p>
+                </div>
+                <div class="card">
+                    <h3>Pametna Učionica</h3>
+                    <p>IoT projekt baziran na Arduinu i MicroPythonu za praćenje temperature i vlažnosti zraka.</p>
+                </div>
+                <div class="card">
+                    <h3>Eko-Mapa grada</h3>
+                    <p>Web aplikacija za mapiranje reciklažnih kontejnera u našem gradu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt / Prijavi se -->
+    <section id="contact" class="container section">
+        <h2>Prijavi se u IT Klub</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" required placeholder="Unesi svoje ime...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" required placeholder="Unesi svoj email...">
+            </div>
+            <div class="form-group">
+                <label for="reason">Zašto želiš u klub?</label>
+                <textarea id="reason" rows="4" required placeholder="Napiši par riječi..."></textarea>
+            </div>
+            <button type="submit" class="btn">Pošalji prijavu</button>
+            <p id="form-msg" class="success-msg"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Školski IT Klub. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
