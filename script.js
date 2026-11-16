@@ -18,12 +18,18 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
         return;
     }
 
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Slanje...';
+
     // Simulacija uspješne prijave
     msg.textContent = `Hvala ti, ${name}! Uspješno si poslao prijavu u IT klub.`;
     
     // Reset forme
     this.reset();
-    
+    submitButton.disabled = false;
+    submitButton.textContent = 'Pošalji prijavu';
+
     setTimeout(() => {
         msg.textContent = '';
     }, 5000);
