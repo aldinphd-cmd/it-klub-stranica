@@ -5,6 +5,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+:focus-visible {
+    outline: 3px solid #00adb5;
+    outline-offset: 3px;
+}
+
 body {
     line-height: 1.6;
     color: #333;
