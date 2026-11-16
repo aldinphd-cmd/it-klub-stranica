@@ -96,3 +96,16 @@ Ovaj dokument sadrži plan rasporeda elemenata (wireframe) i vizualnog identitet
 * **Komponente i raspored:**
   * **CSS Grid:** Korišten za sekciju projekata (`grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))`) kako bi se kartice automatski slagale jedna ispod druge na manjim ekranima.
   * **Kartice:** Blago zaobljeni rubovi (`border-radius: 8px`) i suptilna sjena (`box-shadow: 0 4px 6px rgba(0,0,0,0.05)`).
+
+---
+
+## 3. Pokretanje projekta
+
+Stranica je statički HTML/CSS/JavaScript projekat. Za pregled je dovoljno otvoriti `index.html` u web pregledniku. Nije potreban build proces niti instalacija dodatnih paketa.
+
+## 4. Funkcionalnosti
+
+- Navigacija između sekcija stranice.
+- Predstavljanje IT kluba, osnivača i projekata.
+- Forma za simuliranu prijavu u klub sa osnovnom provjerom unosa.
+- Responzivni raspored za manje ekrane.
