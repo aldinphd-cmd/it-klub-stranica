@@ -181,7 +181,15 @@ footer {
 /* Responzivnost za manje ekrane */
 @media(max-width: 768px) {
     .nav-links {
-        display: none; /* Može se proširiti po želji */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 0.75rem;
     }
     .hero h2 {
         font-size: 2rem;
