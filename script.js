@@ -6,8 +6,15 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     const reason = document.getElementById('reason').value.trim();
     const msg = document.getElementById('form-msg');
 
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
     if (name === '' || email === '' || reason === '') {
         alert('Molimo popunite sva polja!');
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert('Molimo unesite ispravnu email adresu!');
         return;
     }
 
